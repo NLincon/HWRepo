@@ -8,11 +8,13 @@
 
 #include <iostream>
 #include "Arduino.h"
+
+#define N_STEPS 10
+
 using namespace std;
 
 int main() {
-	cout << "!!!Hello NLincon!!!" << endl; // prints !!!Hello NLincon!!!
 	setup();
-	for(int i = 0; i < 10; i++) loop();
+	for(int i = 0; i < N_STEPS; i++) loop();
 	return 0;
 }
