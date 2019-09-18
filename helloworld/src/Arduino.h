@@ -8,7 +8,12 @@
 #ifndef ARDUINO_H_
 #define ARDUINO_H_
 
+#include <iostream>
+
 namespace std {
+
+void digitalWrite(int pin,int value);
+void delay(int ms);
 
 void setup();
 void loop();

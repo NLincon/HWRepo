@@ -9,13 +9,28 @@
 
 namespace std {
 
+void digitalWrite(int pin,int value) {
+	cout << "value = " << value << endl;
+}
+
+void delay(int ms) {
+
+}
+
 void setup() {
 
 }
 
 
 void loop() {
+	int pin = 1;
+	int value = 1;
+	int ms = 1000;
 
+	digitalWrite(pin, value);
+	value = 0;
+	delay(ms);
+	digitalWrite(pin, value);
 }
 
 Arduino::Arduino() {
