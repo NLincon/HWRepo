@@ -6,8 +6,11 @@
  */
 
 #include "Arduino.h"
+#include "Truck.h"
 
 namespace std {
+
+Truck truck;
 
 void digitalWrite(int pin,int value) {
 	cout << "value = " << value << endl;
@@ -26,11 +29,15 @@ void loop() {
 	int pin = 1;
 	int value = 1;
 	int ms = 1000;
+	int direction;
+	int speed;
 
 	digitalWrite(pin, value);
 	value = 0;
 	delay(ms);
 	digitalWrite(pin, value);
+
+//	truck.move(speed);
 }
 
 Arduino::Arduino() {
